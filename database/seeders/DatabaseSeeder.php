@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Job::factory(100)->create();
+        // Job::factory(100)->create();
         User::factory(300)->create();
 
         $users = User::all()->shuffle();

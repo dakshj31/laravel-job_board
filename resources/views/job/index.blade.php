@@ -21,11 +21,11 @@
             <div>
                 <div class="mb-1 font-semibold">Experience</div>
 
-                <x-radio-group name="experience" :options=" array_combine(array_map('ucfirst', \App\Models\Job::$experience), \App\Models\Job::$experience) " />
+                <x-radio-group name="experience" :options=" array_combine(array_map('ucfirst', Job::$experience), Job::$experience) " />
             </div>
             <div>
                 <div class="mb-1 font-semibold">Category</div>
-                <x-radio-group name="category" :options="\App\Models\Job::$category" />
+                <x-radio-group name="category" :options="Job::$category" />
             </div>
         </div>
         <x-button class="w-full">Filter</x-button>
