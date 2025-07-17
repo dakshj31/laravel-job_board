@@ -15,6 +15,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+
+            User::factory()->create([
+                'name' => 'daksh',
+                'email' => 'daksh@gmail.com',
+            ]);
+
         // Job::factory(100)->create();
         User::factory(300)->create();
 
@@ -34,9 +40,6 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+       
     }
 }
